@@ -31,7 +31,7 @@ $(function () {
         e.preventDefault();
         $.ajax({
             type: "POST",
-            url: " /api/reguser",
+            url: "/api/reguser",
             data: {
                 username: $('#form_reg [name=username]').val(),
                 password: $('#form_reg [name=password]').val(),
@@ -58,9 +58,9 @@ $(function () {
                 }
                 layer.msg('登录成功');
                 // token存储在本地
-                localStorage.setItem('token',res.token)
+                localStorage.setItem('token', res.token)
                 // 跳转后台页面
-                location.href='/index.html'
+                location.href = '/index.html'
             }
         });
     })
