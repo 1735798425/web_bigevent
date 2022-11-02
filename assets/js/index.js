@@ -27,7 +27,7 @@ function getUesrInfo() {
             }
             renderAvatar(res.data)
         },
-     
+
     });
 
 }
