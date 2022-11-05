@@ -4,7 +4,7 @@ $(function () {
     form.verify({
         nickname: function (value) {
             if (value.length > 6) {
-                return layer.msg('不能超过6位')
+                return '用户名不能超过6位'
             }
         }
 
